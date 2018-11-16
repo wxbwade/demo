@@ -1,0 +1,22 @@
+<!DOCTYPE logback>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+
+    <!-- 项目的日志级别定义 -->
+    <logger name="com.example.demo">
+        <level value="debug" />
+    </logger>
+
+    <!--<appender name="console" class="ch.qos.logback.core.ConsoleAppender">-->
+        <!--&lt;!&ndash;格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符&ndash;&gt;-->
+        <!--<encoder>-->
+            <!--<pattern>%d{HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>-->
+        <!--</encoder>-->
+    <!--</appender>-->
+
+
+    <root level="info">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
