@@ -5,7 +5,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 /**
- * TODO 描述:
+ * Spring Security配置
  *
  * @author xiaobin.wang@marketin.cn
  * @create 2018-11-17 0:24
@@ -29,7 +29,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.authorizeRequests().anyRequest().authenticated()
+        http.authorizeRequests()
+                .antMatchers("/css/*.css").permitAll()
+                .anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .loginPage("/login")  // 认证页面

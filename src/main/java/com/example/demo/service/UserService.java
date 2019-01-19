@@ -7,6 +7,9 @@ import java.util.List;
 
 public interface UserService extends CrudService<User, Integer> {
 
+    User getUser(int id);
+
+    User updateUser(User user);
 //    User getUserById(Integer id);
 //
 //    List<User> findAll();

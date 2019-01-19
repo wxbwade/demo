@@ -14,7 +14,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import javax.sql.DataSource;
 
 /**
- * TODO 描述:
+ * Mybatis配置
  *
  * @author xiaobin.wang@marketin.cn
  * @create 2018-11-15 22:28

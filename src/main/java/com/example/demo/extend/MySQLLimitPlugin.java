@@ -11,7 +11,7 @@ import org.mybatis.generator.api.dom.xml.XmlElement;
 import java.util.List;
 
 /**
- * @author Jesse on 19/01/2018.
+ * 需要打jar包到私有库中才能使用分页插件
  */
 public class MySQLLimitPlugin extends PluginAdapter {
 
